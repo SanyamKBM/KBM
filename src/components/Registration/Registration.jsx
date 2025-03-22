@@ -65,15 +65,7 @@ const Registration = () => {
               />
             </div>
 
-            {/* Password */}
-            <div className="flex items-center border border-black rounded-lg p-3 bg-white">
-              <FaLock className="text-blue-800 mr-3" />
-              <input
-                type="password"
-                className="w-full outline-none bg-transparent text-black placeholder-gray-500"
-                placeholder="Password"
-              />
-            </div>
+           
 
             {/* Submit Button */}
             <button className="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition">

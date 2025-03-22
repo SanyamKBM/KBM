@@ -354,9 +354,9 @@ const messages = [
     message: "We believe in nurturing creativity and critical thinking in every student.",
   },
   {
-    title: "Marketing Head",
-    Name: "Suryansh Srivastava",
-    image: PrincipalImage,
+    title: "Principal",
+    Name: "Shri Manish Upadhyay",
+    image: Principal,
     message: "Our mission is to provide quality education that builds a strong foundation for the future.",
   },
 

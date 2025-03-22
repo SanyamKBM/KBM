@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { FaBook, FaBus, FaFlask, FaLaptop, FaBasketballBall, FaTheaterMasks } from "react-icons/fa";
-import Vision from '../../../public/MsgDesk/Founder.png'
+import Vision from '../../../public/MsgDesk/Founder.jpg'
 import Review from '../../../public/Review.png'
 
 
@@ -14,7 +14,7 @@ export function About() {
         <img
           src={Vision} // Replace with actual image URL
           alt="Hello"
-          className="w-[60%] max-w-sm md:max-w-md lg:max-w-lg rounded-xl shadow-lg object-cover"
+          className="w-[80%] max-w-sm md:max-w-md lg:max-w-lg rounded-xl shadow-lg object-cover"
         />
       </div>
 
@@ -22,7 +22,7 @@ export function About() {
       <div className="md:w-1/2 p-6">
         <h2 className="text-4xl font-bold text-blue-700 mb-6">Our Vision</h2>
         <p className="text-gray-700 text-lg leading-relaxed mb-4">
-          <strong>गुरुचरन दास पब्लिक स्कूल</strong> का उद्देश्य एक 
+          <strong>के बी एम पब्लिक स्कूल</strong> का उद्देश्य एक 
           <strong> शिक्षा प्रणाली</strong> विकसित करना है जो छात्रों को न केवल 
           <strong> शैक्षणिक उत्कृष्टता</strong> बल्कि <strong> मानवीय मूल्यों, आत्मनिर्भरता</strong>, और 
           <strong> नैतिकता</strong> के साथ सशक्त बनाए।
@@ -76,12 +76,12 @@ export function EstablishedYear() {
       <div className="md:w-1/2 p-6">
         <h2 className="text-4xl font-bold text-blue-700 mb-6">हमारी स्थापना</h2>
         <p className="text-gray-700 text-lg leading-relaxed mb-4">
-          <strong>गुरुचरन दास पब्लिक स्कूल</strong> की स्थापना वर्ष <strong>2000</strong> में की गई थी। 
+          <strong>के बी एम पब्लिक स्कूल</strong> की स्थापना वर्ष <strong>2015</strong> में की गई थी। 
           इस स्कूल का उद्देश्य छात्रों को <strong>उच्च गुणवत्ता वाली शिक्षा</strong> प्रदान करना और 
           <strong> नैतिक मूल्यों</strong> को विकसित करना है।
         </p>
         <p className="text-gray-700 text-lg leading-relaxed mb-4">
-          2000 से, हमारा स्कूल <strong>नवाचार और उत्कृष्टता</strong> के साथ शिक्षा प्रदान कर रहा है। 
+           2015  से, हमारा स्कूल <strong>नवाचार और उत्कृष्टता</strong> के साथ शिक्षा प्रदान कर रहा है। 
           यहाँ के विद्यार्थी <strong>वैज्ञानिक सोच, आत्मनिर्भरता</strong> और <strong>सामाजिक जिम्मेदारी</strong> की भावना के साथ आगे बढ़ते हैं।
         </p>
       </div>
