@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import Dummy from "../../../src/assets/teacher.png";
 
 const staffMembers = [
-  { id: 2, name: "Rakesh Kumar Gautam", qualification: "LLB, B.Ed., BTC", image: Dummy },
-  { id: 1, name: "Yogesh Kumar", qualification: "M.Sc. (Math)", image: Dummy },
+  { id: 1, name: "Rakesh Kumar Gautam", qualification: "LLB, B.Ed., BTC", image: Dummy },
+  { id: 2, name: "Yogesh Kumar", qualification: "M.Sc. (Math)", image: Dummy },
   { id: 3, name: "Usha Patel", qualification: "M.A.", image: Dummy },
   { id: 4, name: "Manish Upadhyay", qualification: "LLB, B.Ed.", image: Dummy },
   { id: 5, name: "Venkatesh Kumar", qualification: "M.A.", image: Dummy },
