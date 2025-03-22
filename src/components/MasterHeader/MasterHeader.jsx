@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import logo from "../../assets/Logo.png";
+import logo from "../../assets/Logo.jpg";
 import New from "../../../public/new.gif"
 import { FaHome, FaInfoCircle, FaImages, FaUser, FaPhone, FaGraduationCap } from "react-icons/fa";
 
@@ -71,7 +71,7 @@ export function Nav() {
           <img
             src={logo}
             alt="Logo"
-            className="h-14 w-auto transition-transform duration-300 transform hover:scale-105 drop-shadow-lg rounded-lg"
+            className="h-auto w-[30%] transition-transform duration-300 transform hover:scale-105 drop-shadow-lg rounded-lg"
           />
         </NavLink>
 
@@ -212,7 +212,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/9161830200?text=Hello! I need more information about the school admission."
+      href="https://wa.me/7390852696?text=Hello! I need more information about the school admission."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-transform duration-300 hover:scale-110 flex items-center justify-center"

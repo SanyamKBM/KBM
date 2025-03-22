@@ -8,7 +8,7 @@ const DevFooter=()=>{
         
         {/* Copyright Section */}
         <p className="text-sm text-gray-400">
-          © {new Date().getFullYear()} Gurucharan Das Public School. All rights reserved.
+          © {new Date().getFullYear()} K.B.M.Public School. All rights reserved.
         </p>
 
         {/* Developer Credit */}

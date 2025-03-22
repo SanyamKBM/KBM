@@ -9,9 +9,9 @@ export default function ContactUs() {
           <div className="flex items-center gap-4 p-6 bg-gray-900 text-white rounded-lg shadow-md">
             <FaMapMarkerAlt className="text-3xl text-red-400" />
             <div>
-              <h3 className="text-xl font-bold">Gurucharan Das Public School</h3>
+              <h3 className="text-xl font-bold"> K.B.M.Public School</h3>
               <p className="text-gray-300 text-sm">
-              Village Sirsi post dulhi, Soharia, Uttar Pradesh 262724
+              Village:- Diyawn, Mirzapur Uttar Pradesh Pin Code - 231314 
               </p>
             </div>
           </div>
@@ -22,14 +22,14 @@ export default function ContactUs() {
               <h3 className="text-xl font-bold">Contact</h3>
               <p className="text-gray-300 text-sm">
                 Phone:{" "}
-                <a href="tel:+919161830200" className="text-blue-400 hover:underline">
-                  +91 9161830200
+                <a href="tel:+917390852696" className="text-blue-400 hover:underline">
+                  +91 7390852696
                 </a>
               </p>
               <p className="text-gray-300 text-sm">
                 Mob:{" "}
-                <a href="tel:+916386824691" className="text-blue-400 hover:underline">
-                  +91-6386824691
+                <a href="tel:+918765028002" className="text-blue-400 hover:underline">
+                  +91-8765028002
                 </a>
               </p>
             </div>
@@ -40,13 +40,13 @@ export default function ContactUs() {
             <div>
               <h3 className="text-xl font-bold">Email</h3>
               <p className="text-gray-300 text-sm">
-                <a href="mailto:gurucharan6176@gmail.com" className="text-blue-400 hover:underline">
-                gurucharan6176@gmail.com
+                <a href="mailto:Kbmpsinfo@gmail.Com" className="text-blue-400 hover:underline">
+                Kbmpsinfo@gmail.Com
                 </a>
               </p>
               <p className="text-gray-300 text-sm">
-                <a href="mailto:ssuryansh382@gmail.com" className="text-blue-400 hover:underline">
-                ssuryansh382@gmail.com
+                <a href="mailto:kbmps.info2015@gmail.com" className="text-blue-400 hover:underline">
+                kbmps.info2015@gmail.com
                 </a>
               </p>
             </div>
@@ -57,7 +57,7 @@ export default function ContactUs() {
         <div className="overflow-hidden rounded-lg shadow-lg">
           <iframe
             className="w-full h-96 border-0 rounded-lg"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.224799291015!2d80.95478117435708!3d28.10917970765609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3998b15fb2108125%3A0x8429d272ba55974a!2sGurucharan%20das%20Public%20School%20Sirsi%20Kheri!5e0!3m2!1sen!2sin!4v1741456806467!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.884761286982!2d82.76803!3d25.240806100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fcf281abd4b15%3A0x6da7c8c750f895c9!2sK.B.M.PUBLIC%20SCHOOL%20DIYAWN!5e0!3m2!1sen!2sin!4v1742624393456!5m2!1sen!2sin"
             allowFullScreen
             loading="lazy"
           ></iframe>

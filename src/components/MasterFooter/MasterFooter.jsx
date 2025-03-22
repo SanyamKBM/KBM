@@ -6,22 +6,23 @@ const MasterFooter = () => {
   return (
     <footer className="bg-gray-900 text-white py-10 px-6 md:px-20">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start">
-        
+
         {/* School Information */}
         <div className="mb-6 md:mb-0 text-center md:text-left">
-          <h2 className="text-2xl font-bold text-yellow-400">Gurucharan Das Public School</h2>
+          <h2 className="text-2xl font-bold text-yellow-400">K. B. M Public School</h2>
           <p className="text-gray-400 mt-2 flex items-center">
-            <FaMapMarkerAlt className="mr-2" /> Sirsi, Lakhimpur-Kheri, Pin: 262724
+            <FaMapMarkerAlt className="mr-2" /> K.B.M.Public School Diyawn <br />  Mirzapur Pin Code - 231314
           </p>
-          <p className="text-gray-400 flex items-center">
-            
-          <FaPhoneAlt className="mr-2" /> <a href="tel:+919161830200">9161830200</a>
           
+          <p className="text-gray-400 mt-2 flex items-center">
+
+            <FaPhoneAlt className="mr-2" /> <a href="tel:+917390852696">7390852696</a>
+
           </p>
-          <p className="text-gray-400 flex items-center">
-            <FaEnvelope className="mr-2" />  <a href="mailto:gurucharan6176@gmail.com">
-                gurucharan6176@gmail.com
-                </a>
+          <p className="text-gray-400  mt-2 flex items-center">
+            <FaEnvelope className="mr-2" />  <a href="mailto:Kbmpsinfo@gmail.Com">
+              Kbmpsinfo@gmail.Com
+            </a>
           </p>
         </div>
 
@@ -44,14 +45,14 @@ const MasterFooter = () => {
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition flex items-center">
               <FaTwitter className="text-xl mr-2" /> Twitter
             </a>
-            <a href="https://youtube.com/@mr.suryanshsrivastava3674?feature=shared" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition flex items-center">
+            <a href="https://youtube.com/@k.b.m.publicschooldiyav?feature=shared" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition flex items-center">
               <FaYoutube className="text-xl mr-2" /> YouTube
             </a>
           </div>
         </div>
       </div>
 
-      
+
     </footer>
   );
 };

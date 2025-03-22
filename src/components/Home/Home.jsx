@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { NavLink, Link } from "react-router-dom";
-import { FaRegCalendarAlt,  FaRegFileAlt, FaRegNewspaper } from "react-icons/fa";
+import { FaRegCalendarAlt, FaRegFileAlt, FaRegNewspaper } from "react-icons/fa";
 import bg from '../../assets/bgforProfile.jpg'
 import { FaCheckCircle } from "react-icons/fa";
 import { FaUser, FaEnvelope, FaPhone, FaComments } from "react-icons/fa";
-import enquiryImage from "../../assets/10308906.jpg"; 
+import enquiryImage from "../../assets/10308906.jpg";
 import Holiday from "../../../public/Document/Holiday.pdf"
 
-import PrincipalImage from "../../../public/MsgDesk/Directer.jpg"; 
-import TeacherImage from "../../../public/MsgDesk/Founder.png"; 
-import StudentImage from "../../../public/MsgDesk/Manager.png"; 
+import PrincipalImage from "../../../public/MsgDesk/Directer.jpg";
+import TeacherImage from "../../../public/MsgDesk/Founder.jpg";
+import vice from "../../../public/MsgDesk/VicePrincipal.png";
 
 
 
@@ -20,7 +20,7 @@ import Second from "../../assets/slider/Second.jpg";
 import Third from "../../assets/slider/Third.jpg";
 import Fourth from "../../assets/slider/Fourth.jpg";
 //Profile Image
-import Principal from '../../assets/Principal.png'
+import Principal from '../../assets/Principal.jpg'
 
 const images = [First, Second, Third, Fourth];
 
@@ -51,52 +51,52 @@ export function Slider() {
   };
 
   return (
-    
-      <div className=" bg-white mt-5 relative w-screen max-w-screen-lg mx-auto overflow-hidden">
-        {/* Image Container */}
-        <div
-          className="flex flex-nowrap transition-transform duration-700 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {images.map((img, index) => (
-            <img
-              key={index}
-              src={img}
-              alt={`Slide ${index + 1}`}
-              className="min-w-full w-full h-[60vh] object-center"
-            />
-          ))}
-        </div>
 
-        {/* Left Arrow */}
-        <button
-          onClick={prevSlide}
-          className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-900 text-white p-2 rounded-full shadow-md hover:bg-gray-700"
-        >
-          <FaArrowLeft size={20} />
-        </button>
+    <div className=" bg-white mt-5 relative w-screen max-w-screen-lg mx-auto overflow-hidden">
+      {/* Image Container */}
+      <div
+        className="flex flex-nowrap transition-transform duration-700 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {images.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt={`Slide ${index + 1}`}
+            className="min-w-full w-full h-[60vh] object-center"
+          />
+        ))}
+      </div>
 
-        {/* Right Arrow */}
-        <button
-          onClick={nextSlide}
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-900 text-white p-2 rounded-full shadow-md hover:bg-gray-700"
-        >
-          <FaArrowRight size={20} />
-        </button>
+      {/* Left Arrow */}
+      <button
+        onClick={prevSlide}
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-900 text-white p-2 rounded-full shadow-md hover:bg-gray-700"
+      >
+        <FaArrowLeft size={20} />
+      </button>
 
-        {/* Dots (Indicators) */}
-        <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              className={`w-3 h-3 rounded-full ${index === currentIndex ? "bg-gray-900" : "bg-gray-400"
-                }`}
-              onClick={() => setCurrentIndex(index)}
-            />
-          ))}
-        </div>
+      {/* Right Arrow */}
+      <button
+        onClick={nextSlide}
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-900 text-white p-2 rounded-full shadow-md hover:bg-gray-700"
+      >
+        <FaArrowRight size={20} />
+      </button>
+
+      {/* Dots (Indicators) */}
+      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            className={`w-3 h-3 rounded-full ${index === currentIndex ? "bg-gray-900" : "bg-gray-400"
+              }`}
+            onClick={() => setCurrentIndex(index)}
+          />
+        ))}
+      </div>
     </div>
-    
+
   );
 };
 
@@ -133,7 +133,7 @@ export function CardSection() {
           icon={<FaRegCalendarAlt className="text-blue-500 text-4xl" />}
           title="Holiday Calendar"
           description="Academic Calendar Provides Activities of whole academic session."
-          download={Holiday} 
+          download={Holiday}
         />
         <Card
           icon={<FaRegFileAlt className="text-blue-500 text-4xl" />}
@@ -156,8 +156,8 @@ export function CardSection() {
 
 const PrincipalMessage = () => {
   return (
-    <div   className="w-full bg-cover bg-center bg-no-repeat px-6 py-12"
-    style={{ backgroundImage: `url(${bg})` }}>
+    <div className="w-full bg-cover bg-center bg-no-repeat px-6 py-12"
+      style={{ backgroundImage: `url(${bg})` }}>
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-6 p-6 bg-white shadow-lg rounded-lg relative">
         {/* Background Texture */}
         <div className="absolute inset-0 bg-[url('/path-to-texture.png')] opacity-10 pointer-events-none"></div>
@@ -170,7 +170,7 @@ const PrincipalMessage = () => {
             className="w-64 h-64 object-cover rounded-lg shadow-lg"
           />
           <div className="bg-blue-600 text-white text-center py-2 rounded-b-lg">
-            <strong>Shri Naveen Kumar Pandey</strong>
+            <strong>Shri Manish Upadhyay</strong>
           </div>
         </div>
 
@@ -178,11 +178,11 @@ const PrincipalMessage = () => {
         <div className="flex-1">
           <h2 className="text-2xl font-bold text-gray-900">Message From Principal</h2>
           <p className="text-gray-700 mt-4">
-          At <i>Gurucharan Das Public School School,</i>  we believe that education is not just about academics but also about
+            At <i>K. B. M School,</i>  we believe that education is not just about academics but also about
             shaping character and inspiring students to reach their highest potential. Our mission
             is to nurture responsible citizens through innovation, discipline, and values......
           </p>
-          
+
           {/* Read More Button */}
           <NavLink to="/about-us">
             <button className="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition">
@@ -204,9 +204,9 @@ const WhyChooseUs = () => {
   return (
     <div className="bg-purple-800 text-white py-12 px-6" style={{ background: "#0f5476  " }}>
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold">Why Choose Gurucharan Das Public School?</h2>
+        <h2 className="text-3xl font-bold">Why K. P. M Public School?</h2>
         <p className="mt-2 text-lg">
-          Gurucharan Das Public School, Sirsi, Lakhimpur-Kheri, is dedicated to providing quality education and holistic development.
+          K. P. M Public School, Diyav, Mirzapur, is dedicated to providing quality education and holistic development.
         </p>
       </div>
       <div className="max-w-5xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -219,7 +219,7 @@ const WhyChooseUs = () => {
           "Safe & Secure Environment"
         ].map((item, index) => (
           <div key={index} className="flex items-center bg-white text-gray-800 p-4 rounded-lg shadow-lg">
-            <FaCheckCircle  style={{color: "#0f5476"}} className="text-purple-700 text-2xl mr-3" />
+            <FaCheckCircle style={{ color: "#0f5476" }} className="text-purple-700 text-2xl mr-3" />
             <span className="font-semibold">{item}</span>
           </div>
         ))}
@@ -231,10 +231,10 @@ const WhyChooseUs = () => {
 
 import { FaUserGraduate, FaChalkboardTeacher, FaUsers } from "react-icons/fa";
 
-export function  CounterSection() {
+export function CounterSection() {
   const counters = [
     { icon: <FaUserGraduate />, label: "Students", count: 400 },
-    { icon: <FaChalkboardTeacher />, label: "Teachers", count: 20 },
+    { icon: <FaChalkboardTeacher />, label: "Teachers", count: 15 },
     { icon: <FaUsers />, label: "Satisfied Parents", count: 900 },
   ];
 
@@ -268,7 +268,7 @@ export function  CounterSection() {
 };
 
 
-export function EnquiryForm(){
+export function EnquiryForm() {
   return (
     <div className="container mx-auto p-6">
       <div className="flex flex-col md:flex-row items-center justify-center bg-white shadow-lg rounded-lg overflow-hidden">
@@ -342,14 +342,14 @@ export function EnquiryForm(){
 
 const messages = [
   {
-    title: "Manager",
-    Name: "Sanjay Srivastava",
-    image: StudentImage,
+    title: "Vice Principal",
+    Name: "Yogesh Upadhyay",
+    image: vice,
     message: "Education empowers us to dream big and achieve greater heights.",
   },
   {
     title: "Founder",
-    Name: "Munna Lal Srivastava",
+    Name: "Mr. Ram Sagar Upadhyay",
     image: TeacherImage,
     message: "We believe in nurturing creativity and critical thinking in every student.",
   },
@@ -359,8 +359,8 @@ const messages = [
     image: PrincipalImage,
     message: "Our mission is to provide quality education that builds a strong foundation for the future.",
   },
-  
-  
+
+
 ];
 
 export function MessageDesk() {
@@ -395,46 +395,47 @@ export function MessageDesk() {
   );
 };
 
-import Abhishek from '../../../public/OurStudent/Abhishek.jpg'
-import Arjoo from '../../../public/OurStudent/Arjoo.jpg'
-import Ansh from '../../../public/OurStudent/Ansh.jpg'
-import Chotu from '../../../public/OurStudent/Chotu.jpg'
+
+import Dummy from "../../../src/assets/teacher.png";
 
 const students = [
   {
-    name: "Abhishek Srivastava",
-    grade: "Class 10",
-    image: Abhishek,
-    description: "Top scorer in Science  and a passionate learner."
+    name: "Anurag Tiwari",
+    grade: "Class 2",
+    image: Dummy,
+    description: "Top scorer in English and a passionate learner."
   },
   {
-    name: "Arjoo Srivastava",
-    grade: "Class 10",
-    image: Arjoo,
-    description: "Aarjoo Srivastava is very good at art and loves to draw."
+    name: "Abhishek Yadav",
+    grade: "Class 7",
+    image: Dummy,
+    description: "An aspiring mathematician with a love for problem-solving"
   },
   {
     name: "Ansh Srivastava",
     grade: "Class 10",
-    image: Ansh,
+    image: Dummy,
     description: "Very good at drawing and loves to play football."
-  }
+  },
+  
+  
 ];
 
-export function OurStudents(){
+
+export function OurStudents() {
   return (
     <div className="max-w-6xl mx-auto p-6">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Meet Our Bright Students</h2>
       <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6">
         {students.map((student, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition"
           >
-            <img 
-              src={student.image} 
-              alt={student.name} 
-              className="w-36 h-36 rounded-full mb-4 border-4 border-blue-500"
+            <img
+              src={student.image}
+              alt={student.name}
+              className="w-36 h-36 rounded-full object-cover object-center  mb-4 border-4 border-blue-500"
             />
             <h3 className="text-xl text-blue-800 font-bold">{student.name}</h3>
             <p className="text-gray-600 font-semibold">{student.grade}</p>
@@ -446,61 +447,85 @@ export function OurStudents(){
   );
 };
 
+import Shalini from '../../../public/OurStudent/OurPride.jpg'
+import Dhanesh from '../../../public/OurStudent/Dhaniya (1).jpg'
+export function OurPride() {
+  const students = [
+    {
+      name: "Shalini Srivastava",
+      image: Shalini, // Import this image
+      achievement: "🏆 Topper Student",
+      session: "Session 2023-2024",
+      description: "यूपी बोर्ड कक्षा 10 की बोर्ड परीक्षा में विद्यालय में अध्ययनरत शालिनी श्रीवास्तव ने 90% अंक प्राप्त कर विद्यालय और अपनी माता-पिता का नाम रोशन किया। विद्यालय परिवार उज्जवल भविष्य की कामना करता है।",
+    },
+    {
+      name: "Dhanesh Upadhyay",
+      image: Dhanesh, // Import this image
+      achievement: "🏆 Mech. Eng. In L&t defence",
+      session: "Session 2019-2020",
+      description: "धनेश उपाध्याय ने अपनी मेहनत और लगन से Mechanical Engineering में उत्कृष्ट प्रदर्शन किया और L&T Defence में कार्यरत होकर विद्यालय एवं अपने परिवार का नाम रोशन किया। विद्यालय परिवार उज्जवल भविष्य की कामना करता है।",
+    },
+  ];
 
-export function OurPride(){
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="bg-blue-50 py-12">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">🌟 Our Pride</h2>
+        <h2 className="text-3xl font-bold text-blue-800 mb-6">🌟 Our Pride</h2>
         <p className="text-gray-600 text-xl font-bold mb-10">
-          Celebrating our outstanding student who make us proud.
+          Celebrating our outstanding students who make us proud.
         </p>
 
-        <div className="max-w-lg d-flex   mx-auto bg-white p-6 rounded-lg shadow-lg">
-         <div className="flex justify-center   h-1/2">
-          <img
-            src={Chotu}
-            alt="Pride"
-            className="w-[80%] h-80 object-center   rounded-lg"
-          />
-          </div>
-          <div className=" justify-center   h-[50%]">
-          <h3 className="text-xl font-bold text-gray-700 mt-4">Anubhav Srivastava</h3> <br/>
-          <p className="text-gray-600 text-xl font-semibold mt-2">  🏆 Navodaya Student</p>
-          <p className="text-gray-500 mt-2">
-            Anubhav has made our school proud by qualifying the Navodaya Entrance Exam, showcasing his acedmic brilliance.
-          </p>
-          </div>  
+        {/* Grid Layout for 2 Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {students.map((student, index) => (
+            <div key={index} className="bg-blue-100 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-xl">
+              
+              {/* Image Section */}
+              <div className="w-full flex bg-white justify-center p-4">
+                <img src={student.image} alt={student.name} className="w-[80%] h-80 object-cover rounded-lg" />
+              </div>
+
+              {/* Student Info */}
+              <div className="p-6  text-center rounded-b-lg">
+                <h3 className="text-xl font-bold text-blue-700">{student.name}</h3>
+                <p className="text-gray-600 text-lg font-semibold mt-1">{student.achievement}</p>
+                <p className="text-blue-600 text-lg font-semibold mt-1">{student.session}</p>
+                <p className="text-gray-500 mt-2">{student.description}</p>
+              </div>
+
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
 };
 
+
 const faqs = [
-  { 
-    question: "What are the school timings?", 
-    answer: "The school operates from 8:00 AM to 2:00 PM for all students." 
+  {
+    question: "What are the school timings?",
+    answer: "The school operates from 8:00 AM to 2:00 PM for all students."
   },
-  { 
-    question: "How can I apply for admission?", 
-    answer: "You can visit the school office or apply online through our website's Admission section." 
+  {
+    question: "How can I apply for admission?",
+    answer: "You can visit the school office or apply online through our website's Admission section."
   },
-  { 
-    question: "Does the school provide transport facilities?", 
-    answer: "Yes, we have a fleet of school buses covering major areas of the city." 
+  {
+    question: "Does the school provide transport facilities?",
+    answer: "Yes, we have a fleet of school buses covering major areas of the city."
   },
-  { 
-    question: "What extracurricular activities are available?", 
-    answer: "We offer sports, music, dance, drama, art, and various clubs for holistic development." 
+  {
+    question: "What extracurricular activities are available?",
+    answer: "We offer sports, music, dance, drama, art, and various clubs for holistic development."
   },
-  { 
-    question: "Are there scholarships or fee concessions?", 
-    answer: "Yes, we offer scholarships based on merit and financial need. Please contact the school office for details." 
+  {
+    question: "Are there scholarships or fee concessions?",
+    answer: "Yes, we offer scholarships based on merit and financial need. Please contact the school office for details."
   },
 ];
 
-export  function FAQ(){
+export function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -513,7 +538,7 @@ export  function FAQ(){
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b pb-4">
-            <button 
+            <button
               className="flex justify-between w-full text-lg font-medium text-gray-700 hover:text-blue-600 py-3 focus:outline-none"
               onClick={() => toggleFAQ(index)}
             >
@@ -534,20 +559,20 @@ export  function FAQ(){
 
 
 
-export default function Home(){
-  return(
+export default function Home() {
+  return (
     <>
-    <Slider/>
-    <CardSection/>
-    <PrincipalMessage/>
-    <WhyChooseUs/>
-    <CounterSection/>
-    <MessageDesk/>
-    <FAQ/>
-    <OurStudents/>
-    <OurPride/>
-    <EnquiryForm/>
-    </> 
+      <Slider />
+      <CardSection />
+      <PrincipalMessage />
+      <WhyChooseUs />
+      <CounterSection />
+      <MessageDesk />
+      <FAQ />
+      <OurStudents />
+      <OurPride />
+      <EnquiryForm />
+    </>
   )
 }
 

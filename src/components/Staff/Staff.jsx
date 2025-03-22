@@ -1,23 +1,20 @@
 import React, { useState } from "react";
 
 // Images
-import Naveen from "../../../src/assets/Principal.png";
-import Sanjay from "../../../public/MsgDesk/Manager.png";
-import Suryansh from "../../../public/MsgDesk/Directer.jpg";
-import Nanha from "../../../public/Staff/Nanha_Lal.png";
-import Mahmood from "../../../public/Staff/Mahmood.jpg";
-import SanjayRaj from "../../../public/Staff/Sanjay.jpg";
 import Dummy from "../../../src/assets/teacher.png";
 
 const staffMembers = [
-  { id: 1, name: "Naveen Kumar Pandey", qualification: "B.Ed. (English)", image: Naveen },
-  { id: 2, name: "Sanjay Kumar", qualification: "M.A. (Economics)", image: Sanjay },
-  { id: 3, name: "Suryansh Srivastava", qualification: "M.Sc. (Agronomy)", image: Suryansh },
-  { id: 4, name: "Nanha Lal", qualification: "B.Ed. (English)", image: Nanha },
-  { id: 5, name: "Rakesh Kumar Maurya", qualification: "M.Sc. (Math)", image: Dummy },
-  { id: 6, name: "Mahmood Ali", qualification: "B.Ed. (SST)", image: Mahmood },
-  { id: 7, name: "Sanjay Raj", qualification: "B.A", image: SanjayRaj },
+  { id: 1, name: "Rakesh Kumar Gautam", qualification: "LLB, B.Ed., BTC", image: Dummy },
+  { id: 2, name: "Yogesh Kumar", qualification: "M.Sc. (Math)", image: Dummy },
+  { id: 3, name: "Usha Patel", qualification: "M.A.", image: Dummy },
+  { id: 4, name: "Manish Upadhyay", qualification: "LLB, B.Ed.", image: Dummy },
+  { id: 5, name: "Venkatesh Kumar", qualification: "M.A.", image: Dummy },
+  { id: 6, name: "Jetendra Kumar", qualification: "B.Sc.", image: Dummy },
+  { id: 7, name: "Anshika Tiwari", qualification: "B.A.", image: Dummy },
+  { id: 8, name: "Diksha Devi", qualification: "B.A. (English)", image: Dummy },
+  { id: 9, name: "Pratibha Devi", qualification: "M.A.", image: Dummy }
 ];
+
 
 export default function Staff() {
   const [viewMode, setViewMode] = useState("table"); // Default view
