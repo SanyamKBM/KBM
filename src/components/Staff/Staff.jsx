@@ -9,7 +9,7 @@ const staffMembers = [
   { id: 3, name: "Usha Patel", qualification: "M.A.", image: Dummy },
   { id: 4, name: "Manish Upadhyay", qualification: "LLB, B.Ed.", image: Dummy },
   { id: 5, name: "Venkatesh Kumar", qualification: "M.A.", image: Dummy },
-  { id: 6, name: "Jetendra Kumar", qualification: "B.Sc.", image: Dummy },
+  { id: 6, name: "Jetendra Kumar", qualification: "M.A", image: Dummy },
   { id: 7, name: "Anshika Tiwari", qualification: "B.A.", image: Dummy },
   { id: 8, name: "Diksha Devi", qualification: "B.A. (English)", image: Dummy },
   { id: 9, name: "Pratibha Devi", qualification: "M.A.", image: Dummy }
