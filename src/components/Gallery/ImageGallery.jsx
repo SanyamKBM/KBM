@@ -1,34 +1,21 @@
 import React, { useState, useRef } from "react";
+import Dummy from "../../../src/assets/teacher.png";
 
-
-import Img1 from "../../../public/ImageGallery/Img1.jpg";
-import Img2 from "../../../public/ImageGallery/Img2.jpg";
-import Img3 from "../../../public/ImageGallery/Img3.jpg";
-import Img4 from "../../../public/ImageGallery/img4.jpg";
-import Img5 from "../../../public/ImageGallery/Img5.jpg";
-import Img6 from "../../../public/ImageGallery/Img6.jpg";
-import Img7 from "../../../public/ImageGallery/Img7.jpg";
-import Img8 from "../../../public/ImageGallery/Img8.jpg";
-import Img9 from "../../../public/ImageGallery/Img9.jpg";
-import Img10 from "../../../public/ImageGallery/Img10.jpg";
-import Img11 from "../../../public/ImageGallery/Img11.jpg";
-import Img12 from "../../../public/ImageGallery/Img12.jpg";
-import Img13 from "../../../public/ImageGallery/Img13.jpg";
 
 const imageGallery = [
-  { id: 2, url: Img11 },
-  { id: 1, url: Img12 },
-  { id: 3, url: Img13 },
-  { id: 4, url: Img4 },
-  { id: 5, url: Img5 },
-  { id: 6, url: Img6 },
-  { id: 7, url:  Img9},
-  { id: 8, url: Img8 },
-  { id: 9, url: Img7 },
-  { id: 10, url: Img10 },
-  { id: 11, url: Img1 },
-  { id: 12, url: Img2 },
-  { id: 13, url: Img3 },
+  { id: 2, url: Dummy },
+  { id: 1, url: Dummy },
+  { id: 3, url: Dummy },
+  { id: 4, url: Dummy },
+  { id: 5, url: Dummy },
+  { id: 6, url: Dummy },
+  { id: 7, url: Dummy },
+  { id: 8, url: Dummy },
+  { id: 9, url: Dummy },
+  { id: 10, url: Dummy },
+  { id: 11, url: Dummy },
+  { id: 12, url: Dummy },
+  { id: 13, url: Dummy },
 ];
 
 function ImageGallery() {
