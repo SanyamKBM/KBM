@@ -204,9 +204,9 @@ const WhyChooseUs = () => {
   return (
     <div className="bg-purple-800 text-white py-12 px-6" style={{ background: "#0f5476  " }}>
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold">Why K. P. M Public School?</h2>
+        <h2 className="text-3xl font-bold">Why K. B. M Public School?</h2>
         <p className="mt-2 text-lg">
-          K. P. M Public School, Diyav, Mirzapur, is dedicated to providing quality education and holistic development.
+          K. B. M Public School, Diyav, Mirzapur, is dedicated to providing quality education and holistic development.
         </p>
       </div>
       <div className="max-w-5xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
