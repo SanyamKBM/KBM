@@ -12,7 +12,11 @@ const staffMembers = [
   { id: 6, name: "Jetendra Kumar", qualification: "M.A", image: Dummy },
   { id: 7, name: "Anshika Tiwari", qualification: "B.A.", image: Dummy },
   { id: 8, name: "Diksha Devi", qualification: "B.A. (English)", image: Dummy },
-  { id: 9, name: "Pratibha Devi", qualification: "M.A.", image: Dummy }
+  { id: 9, name: "Pratibha Devi", qualification: "M.A.", image: Dummy },
+  { id: 10, name: "Rina Gupta", qualification: "M.A.", image: Dummy },
+  { id: 11, name: "Akansha Devi", qualification: "M.A.", image: Dummy }
+  
+
 ];
 
 
