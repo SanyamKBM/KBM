@@ -1,7 +1,7 @@
 import React from "react";
 
 const videoGallery = [
-  { id: 1, url: "https://www.youtube.com/embed/M67LBzJpSZM?si=dpiQ27f6dyOtNOAf" },
+  { id: 1, url: "https://youtube.com/shorts/Ybb4fAwenF4?feature=shared" },
   { id: 2, url: "https://www.youtube.com/embed/PbyBf8DD3MI?si=9OAUiEClftNpaXZW" },
   { id: 3, url: "https://www.youtube.com/embed/505Z-Vv_q-Y?si=WcrUynOd1yp-eOhp" },
   { id: 4, url: "https://www.youtube.com/embed/rko-KPcBDqg?si=ejveblyRAHxskM80" },

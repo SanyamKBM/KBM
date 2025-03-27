@@ -5,24 +5,24 @@ import logo from "../../assets/Logo.jpg";
 import New from "../../../public/new.gif"
 import { FaHome, FaInfoCircle, FaImages, FaUser, FaPhone, FaGraduationCap } from "react-icons/fa";
 
-export function Mark(){
+export function Mark() {
   return (
     <div className="relative w-full bg-white text-blue-600 py-1 overflow-hidden border-t border-b border-gray-300">
-      <div 
-        className="flex items-center whitespace-nowrap animate-marquee text-base md:text-lg font-bold" 
-        onMouseOver={(e) => e.currentTarget.style.animationPlayState = 'paused'} 
+      <div
+        className="flex items-center whitespace-nowrap animate-marquee text-base md:text-lg font-bold"
+        onMouseOver={(e) => e.currentTarget.style.animationPlayState = 'paused'}
         onMouseOut={(e) => e.currentTarget.style.animationPlayState = 'running'}
       >
         <span className="mr-5 flex items-center">
-          <img 
+          <img
             src={New}
-            alt="New" 
+            alt="New"
             className="inline-block w-8 md:w-10 h-4 md:h-5 mr-2"
           />
           <FaGraduationCap className="text-yellow-500 mr-2 text-3xl md:text-lg" />
           ❗ प्रवेश प्रारम्भ सत्र 2025-26 - अभी आवेदन करें ❗
           <NavLink
-             to="/registration"
+            to="/registration"
             className="ml-4 px-2 md:px-3 py-1 bg-red-600 text-white font-bold rounded-full shadow-md hover:bg-red-700 transition text-xs md:text-sm"
           >
             Apply Now
@@ -44,7 +44,14 @@ export function Mark(){
   );
 };
 
+export function SchoolName() {
+  return (
+    <h1 className="hidden md:block bg-gray-900 text-center text-white text-2xl font-bold p-4">
+    K B M Public School
+  </h1>  
 
+  )
+}
 
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,6 +72,7 @@ export function Nav() {
 
   return (
     <header className="bg-gray-900 text-white shadow-lg sticky top-0 left-0 w-full z-50">
+
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
         {/* Logo */}
         <NavLink to="/">
@@ -74,6 +82,10 @@ export function Nav() {
             className="h-auto w-[30%] transition-transform duration-300 transform hover:scale-105 drop-shadow-lg rounded-lg"
           />
         </NavLink>
+        <div className="bg-gray-900 text-center w-[600px] flex justify-center mr-[22%] text-white font-bold p-4 md:hidden">
+          K B M Public School
+        </div>
+
 
         {/* Mobile Menu Button */}
         <button
@@ -226,6 +238,7 @@ export default function MasterHeader() {
   return (
     <>
       <Mark />
+      <SchoolName />
       <Nav />
       <WhatsAppButton />
     </>

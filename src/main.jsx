@@ -41,5 +41,5 @@ createRoot(document.getElementById('root')).render(
       <DevFooter/>
       </div>
     </Router>
-   </StrictMode>,
+   </StrictMode>
 )
