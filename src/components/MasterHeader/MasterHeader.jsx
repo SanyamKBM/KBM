@@ -47,8 +47,8 @@ export function Mark() {
 export function SchoolName() {
   return (
     <h1 className="hidden md:block bg-gray-900 text-center text-white text-2xl font-bold p-4">
-    K B M Public School
-  </h1>  
+      K B M Public School
+    </h1>
 
   )
 }
@@ -82,9 +82,10 @@ export function Nav() {
             className="h-auto w-[30%] transition-transform duration-300 transform hover:scale-105 drop-shadow-lg rounded-lg"
           />
         </NavLink>
-        <div className="bg-gray-900 text-center w-[600px] flex justify-center mr-[22%] text-white font-bold p-4 md:hidden">
+        <div className="bg-gray-900 text-center mr-[17%] w-auto flex text-sm justify-center text-white font-bold p-2 md:hidden whitespace-nowrap">
           K B M Public School
         </div>
+
 
 
         {/* Mobile Menu Button */}
