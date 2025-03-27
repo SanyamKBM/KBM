@@ -82,7 +82,7 @@ export function Nav() {
             className="h-auto w-[30%] transition-transform duration-300 transform hover:scale-105 drop-shadow-lg rounded-lg"
           />
         </NavLink>
-        <div className="bg-gray-900 text-center mr-[17%] w-auto flex text-sm justify-center text-white font-bold p-2 md:hidden whitespace-nowrap">
+        <div className="bg-gray-900 text-center mr-[21%] w-auto flex text-sm justify-center text-white font-bold p-2 md:hidden whitespace-nowrap">
           K B M Public School
         </div>
 
