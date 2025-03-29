@@ -129,7 +129,7 @@ import { Star } from "lucide-react";
 
 export function RateUs() {
   const [rating, setRating] = useState(0);
-  const googleReviewLink = "https://shorturl.at/DGUVp";
+  const googleReviewLink = "https://g.co/kgs/1Yeddee";
 
   const handleRating = (rate) => {
     setRating(rate);
